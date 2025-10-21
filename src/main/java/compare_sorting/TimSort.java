@@ -1,5 +1,8 @@
 package compare_sorting;
 
+import lombok.Data;
+
+@Data
 public class TimSort {
     
     private static final int MIN_MERGE = 32;
@@ -7,38 +10,6 @@ public class TimSort {
     private int mergeLeft = 0;
     private int mergeMid = 0;
     private int mergeRight = 0;
-
-    public int getLeft() {
-        return left;
-    }
-
-    public void setLeft(int left) {
-        this.left = left;
-    }
-
-    public int getMergeLeft() {
-        return mergeLeft;
-    }
-
-    public void setMergeLeft(int mergeLeft) {
-        this.mergeLeft = mergeLeft;
-    }
-
-    public int getMergeMid() {
-        return mergeMid;
-    }
-
-    public void setMergeMid(int mergeMid) {
-        this.mergeMid = mergeMid;
-    }
-
-    public int getMergeRight() {
-        return mergeRight;
-    }
-
-    public void setMergeRight(int mergeRight) {
-        this.mergeRight = mergeRight;
-    }
 
     public int[] timSort(int[] arr) {
         int n = arr.length;
