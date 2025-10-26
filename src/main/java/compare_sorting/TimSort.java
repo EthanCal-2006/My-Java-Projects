@@ -1,8 +1,6 @@
 package compare_sorting;
 
-import lombok.Data;
-
-@Data
+@lombok.Data
 public class TimSort {
     
     private static final int MIN_MERGE = 32;
